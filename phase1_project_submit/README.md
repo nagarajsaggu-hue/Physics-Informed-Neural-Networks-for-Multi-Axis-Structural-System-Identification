@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/banner.png" alt="PINN multi-axis structural system identification — project overview" width="100%">
+<img src="banner.png" alt="PINN multi-axis structural system identification — project overview" width="100%">
 </p>
 
 <h1 align="center">Physics-Informed Neural Networks for Multi-Axis Structural System Identification</h1>
