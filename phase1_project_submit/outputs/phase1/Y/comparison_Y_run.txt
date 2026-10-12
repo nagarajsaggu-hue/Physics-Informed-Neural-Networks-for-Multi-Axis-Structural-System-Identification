@@ -1,0 +1,9 @@
+method                  K (N/m)      C (N.s/m)   f_n (Hz)   zeta (%)   note
+---------------------------------------------------------------------------
+PINN                 8.8030e+08     3.4381e+04    19.6949     0.2417   30000 iterations
+Least squares        8.8364e+08     3.2475e+04    19.7323     0.2278   R^2 = 0.998379
+ANSYS modal          9.6850e+08              -    20.6581          -   mode 2, m* = 57,486 kg
+
+PINN vs least squares : K -0.38 %, C +5.87 %
+PINN vs ANSYS modal   : K -9.11 %
+  (independent check. A gap here can also mean the transient and modal solves used different configurations.)

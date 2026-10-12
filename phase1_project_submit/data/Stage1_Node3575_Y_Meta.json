@@ -1,0 +1,50 @@
+{
+  "experiment": "Stage1_Y_direction",
+  "node_id": 3575,
+  "direction": "Y",
+  "n_samples": 1000,
+  "start_time_seconds": 0.01,
+  "end_time_seconds": 10.0,
+  "duration_seconds": 9.99,
+  "dt_seconds": 0.009999999999999787,
+  "total_structural_mass_kg": 78500.0,
+  "reduced_model": {
+    "reference_mode": 2,
+    "generalized_mass_kg": 57485.71702784405,
+    "natural_frequency_hz": 20.65810212818975,
+    "generalized_stiffness_N_per_m": 968502017.469736,
+    "phi_y_at_node": 0.004170806326449944,
+    "modal_source_file": "D:\\modal_results.json",
+    "note": "Mode 2 explicitly selected as the Y-direction global sway reference."
+  },
+  "ansys_transient": {
+    "result_file": "D:\\AnsysPinn\\table.wbpz\\table_files\\dp0\\SYS-1\\MECH\\file.rst",
+    "measurement_node": 3575,
+    "measurement_direction": "Y"
+  },
+  "force": {
+    "source_file": "D:\\AnsysPinn\\model1 data ectraction\\Force2_Y_Input.txt",
+    "direction": "Y",
+    "peak_force_N": 11103.0,
+    "dominant_frequency_hz": 15.00000000000032,
+    "expected_frequency_hz": 15.0
+  },
+  "response": {
+    "displacement_range_m": 9.9621126455e-05,
+    "peak_displacement_m": 5.07411000166e-05,
+    "dominant_frequency_hz": 15.00000000000032
+  },
+  "derivative_cross_check": {
+    "velocity_correlation": 0.9992809379676555,
+    "acceleration_correlation": 0.8825091660066318,
+    "method": "numpy.gradient",
+    "usage": "Diagnostic only. Displacement remains the primary PINN observation."
+  },
+  "column_usage": {
+    "Time (s)": "Time coordinate",
+    "Displacement_Y (m)": "Primary PINN observation",
+    "Velocity_Y (m/s)": "ANSYS cross-check/reference",
+    "Acceleration_Y (m/s^2)": "ANSYS cross-check/reference",
+    "Force_Y (N)": "Known physics input F(t)"
+  }
+}

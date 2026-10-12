@@ -1,0 +1,106 @@
+{
+  "node_id": 3575,
+  "direction": "X",
+  "total_structural_mass_kg": 78500.0,
+  "modes": [
+    {
+      "mode": 1,
+      "frequency_hz": 20.083511908707493,
+      "phi_x": 0.004197111826778762,
+      "phi_y": -8.072495992597593e-07,
+      "phi_z": -0.0002715467252571384,
+      "generalized_mass_kg": 56767.38891799329,
+      "generalized_stiffness_N_per_m": 903936601.3484567
+    },
+    {
+      "mode": 2,
+      "frequency_hz": 20.658102128189753,
+      "phi_x": 4.201801853861464e-06,
+      "phi_y": 0.004170806326449934,
+      "phi_z": -0.000260291776710688,
+      "generalized_mass_kg": 56640732777.32542,
+      "generalized_stiffness_N_per_m": 954265977742493.1
+    },
+    {
+      "mode": 3,
+      "frequency_hz": 30.515529745093843,
+      "phi_x": 0.0042009362053309525,
+      "phi_y": -0.005248298749049869,
+      "phi_z": 6.141800703494371e-05,
+      "generalized_mass_kg": 56664.07805865351,
+      "generalized_stiffness_N_per_m": 2083096508.8663125
+    },
+    {
+      "mode": 4,
+      "frequency_hz": 51.4342036165069,
+      "phi_x": 0.0003656006773732394,
+      "phi_y": 0.00017404747172792843,
+      "phi_z": -0.0004175097113607285,
+      "generalized_mass_kg": 7481454.113284397,
+      "generalized_stiffness_N_per_m": 781357513943.0797
+    },
+    {
+      "mode": 5,
+      "frequency_hz": 86.68269682401296,
+      "phi_x": 0.0005838860262192049,
+      "phi_y": 1.9373998792717345e-06,
+      "phi_z": -0.00022804157200638617,
+      "generalized_mass_kg": 2933214.5907411296,
+      "generalized_stiffness_N_per_m": 870098464298.9694
+    },
+    {
+      "mode": 6,
+      "frequency_hz": 104.80074468427657,
+      "phi_x": 0.00018055331322494543,
+      "phi_y": 0.0007009428100595585,
+      "phi_z": -0.0004016258165126808,
+      "generalized_mass_kg": 30675318.125632174,
+      "generalized_stiffness_N_per_m": 13300793452045.312
+    },
+    {
+      "mode": 7,
+      "frequency_hz": 114.10808536647987,
+      "phi_x": -0.0003777816899673036,
+      "phi_y": 0.000744779214644384,
+      "phi_z": -0.00017491410383415064,
+      "generalized_mass_kg": 7006775.293005137,
+      "generalized_stiffness_N_per_m": 3601726766154.2686
+    },
+    {
+      "mode": 8,
+      "frequency_hz": 170.32334642778576,
+      "phi_x": -0.001337212420095349,
+      "phi_y": 0.00020667714321468975,
+      "phi_z": 0.0002749384955864786,
+      "generalized_mass_kg": 559241.2485322831,
+      "generalized_stiffness_N_per_m": 640482541323.1521
+    },
+    {
+      "mode": 9,
+      "frequency_hz": 173.2554331483243,
+      "phi_x": -0.0011209972262994292,
+      "phi_y": 0.00027060285256598054,
+      "phi_z": 0.0011055854065258402,
+      "generalized_mass_kg": 795776.1593300641,
+      "generalized_stiffness_N_per_m": 943027561587.3599
+    },
+    {
+      "mode": 10,
+      "frequency_hz": 186.70779240003665,
+      "phi_x": -0.0005391539350098415,
+      "phi_y": -0.0007163993543056536,
+      "phi_z": 6.674806174369455e-05,
+      "generalized_mass_kg": 3440126.72811121,
+      "generalized_stiffness_N_per_m": 4734335882038.697
+    }
+  ],
+  "dominant_mode": {
+    "mode": 3,
+    "frequency_hz": 30.515529745093843,
+    "phi_x": 0.0042009362053309525,
+    "phi_y": -0.005248298749049869,
+    "phi_z": 6.141800703494371e-05,
+    "generalized_mass_kg": 56664.07805865351,
+    "generalized_stiffness_N_per_m": 2083096508.8663125
+  }
+}

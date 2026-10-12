@@ -1,0 +1,6 @@
+source venv/bin/activate
+python scripts/run_train.py --tag Z_run
+python scripts/run_evaluate.py --tag Z_run
+python scripts/run_plot.py --tag Z_run
+bash update_multiaxis_docs.sh
+tar --exclude='./venv' -czvf phase1_project_backup.tar.gz .

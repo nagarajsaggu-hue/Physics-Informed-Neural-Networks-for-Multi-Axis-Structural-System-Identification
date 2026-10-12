@@ -1,0 +1,28 @@
+{
+  "node_id": 3575,
+  "direction": "X",
+  "n_samples": 1000,
+  "dt_seconds": 0.009999999999999787,
+  "duration_seconds": 9.99,
+  "total_structural_mass_kg": 78500.0,
+  "generalized_mass_kg": 56767.0,
+  "mass_status": "RESOLVED - from modal analysis",
+  "force_peak_N": 11103.0,
+  "force_drive_frequency_hz": 15.00000000000032,
+  "force_source_file": "Force2_Input.txt",
+  "least_squares_reference": {
+    "mass_kg": 86041.37715605156,
+    "damping_N_s_per_m": 34952.08556407126,
+    "stiffness_N_per_m": 1090372367.7121742,
+    "r_squared": 0.9999974446095587,
+    "natural_frequency_hz": 17.91652886879573,
+    "damping_ratio": 0.001804271978061139,
+    "note": "Classical fit. The PINN should reproduce these values."
+  },
+  "column_usage": {
+    "Displacement_X (m)": "TRAINING OBSERVATION - the only column the PINN fits",
+    "Velocity_X (m/s)": "cross-check only, corr with dv/dt = 0.9999",
+    "Acceleration_X (m/s^2)": "cross-check only, corr with da/dt = 0.8836",
+    "Force_X (N)": "physics input, enters the residual as F(t)"
+  }
+}

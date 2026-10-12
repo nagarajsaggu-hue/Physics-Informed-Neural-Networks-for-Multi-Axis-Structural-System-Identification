@@ -1,0 +1,117 @@
+{
+  "node_id": 3575,
+  "direction": "Z",
+  "reference_mode_number": 4,
+  "total_structural_mass_kg": 78500.0,
+  "modal_result_file": "D:\\AnsysPinn\\table.wbpz\\table_files\\dp0\\SYS\\MECH\\file0.rst",
+  "modes": [
+    {
+      "mode": 1,
+      "frequency_hz": 20.083511908707504,
+      "phi_x": 0.004197111826778772,
+      "phi_y": -8.072495992914672e-07,
+      "phi_z": -0.0002715467252571399,
+      "generalized_mass_kg": 13561597.808315555,
+      "generalized_stiffness_N_per_m": 215948361644.96964
+    },
+    {
+      "mode": 2,
+      "frequency_hz": 20.65810212818975,
+      "phi_x": 4.201801853890482e-06,
+      "phi_y": 0.004170806326449944,
+      "phi_z": -0.0002602917767106927,
+      "generalized_mass_kg": 14759753.494662253,
+      "generalized_stiffness_N_per_m": 248667873969.67593
+    },
+    {
+      "mode": 3,
+      "frequency_hz": 30.515529745093826,
+      "phi_x": 0.004200936205330948,
+      "phi_y": -0.005248298749049865,
+      "phi_z": 6.141800703494668e-05,
+      "generalized_mass_kg": 265099287.40856215,
+      "generalized_stiffness_N_per_m": 9745634607027.518
+    },
+    {
+      "mode": 4,
+      "frequency_hz": 51.43420361650685,
+      "phi_x": 0.0003656006773732339,
+      "phi_y": 0.0001740474717279368,
+      "phi_z": -0.0004175097113607235,
+      "generalized_mass_kg": 5736762.050326024,
+      "generalized_stiffness_N_per_m": 599143170011.0922
+    },
+    {
+      "mode": 5,
+      "frequency_hz": 86.68269682401278,
+      "phi_x": 0.0005838860262191764,
+      "phi_y": 1.9373998792830424e-06,
+      "phi_z": -0.00022804157200639042,
+      "generalized_mass_kg": 19229675.14984225,
+      "generalized_stiffness_N_per_m": 5704223233329.191
+    },
+    {
+      "mode": 6,
+      "frequency_hz": 104.80074468427676,
+      "phi_x": 0.0001805533132249462,
+      "phi_y": 0.0007009428100595429,
+      "phi_z": -0.0004016258165126695,
+      "generalized_mass_kg": 6199501.323057525,
+      "generalized_stiffness_N_per_m": 2688098824793.2227
+    },
+    {
+      "mode": 7,
+      "frequency_hz": 114.1080853664795,
+      "phi_x": -0.0003777816899672705,
+      "phi_y": 0.0007447792146443829,
+      "phi_z": -0.00017491410383412646,
+      "generalized_mass_kg": 32685139.386060495,
+      "generalized_stiffness_N_per_m": 16801301092070.02
+    },
+    {
+      "mode": 8,
+      "frequency_hz": 170.3233464277852,
+      "phi_x": -0.001337212420095434,
+      "phi_y": 0.00020667714321468938,
+      "phi_z": 0.0002749384955866543,
+      "generalized_mass_kg": 13229057.255276669,
+      "generalized_stiffness_N_per_m": 15150849892432.266
+    },
+    {
+      "mode": 9,
+      "frequency_hz": 173.25543314832333,
+      "phi_x": -0.0011209972262994456,
+      "phi_y": 0.00027060285256584116,
+      "phi_z": 0.0011055854065260993,
+      "generalized_mass_kg": 818116.9771968968,
+      "generalized_stiffness_N_per_m": 969502351953.7292
+    },
+    {
+      "mode": 10,
+      "frequency_hz": 186.70779240003822,
+      "phi_x": -0.0005391539350087181,
+      "phi_y": -0.0007163993543042424,
+      "phi_z": 6.674806174010332e-05,
+      "generalized_mass_kg": 224451587.81467918,
+      "generalized_stiffness_N_per_m": 308892459480713.94
+    }
+  ],
+  "largest_local_Z_amplitude_mode": {
+    "mode": 9,
+    "frequency_hz": 173.25543314832333,
+    "phi_x": -0.0011209972262994456,
+    "phi_y": 0.00027060285256584116,
+    "phi_z": 0.0011055854065260993,
+    "generalized_mass_kg": 818116.9771968968,
+    "generalized_stiffness_N_per_m": 969502351953.7292
+  },
+  "selected_reference_mode": {
+    "mode": 4,
+    "frequency_hz": 51.43420361650685,
+    "phi_x": 0.0003656006773732339,
+    "phi_y": 0.0001740474717279368,
+    "phi_z": -0.0004175097113607235,
+    "generalized_mass_kg": 5736762.050326024,
+    "generalized_stiffness_N_per_m": 599143170011.0922
+  }
+}

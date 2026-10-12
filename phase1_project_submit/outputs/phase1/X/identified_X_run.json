@@ -1,0 +1,50 @@
+{
+  "tag": "X_run",
+  "identified": {
+    "K_N_per_m": 818342230.4534912,
+    "C_N_s_per_m": 34093.41705555562
+  },
+  "fixed_inputs": {
+    "mass_kg": 56767.0,
+    "force_amplitude_N": 11103.0,
+    "force_frequency_hz": 15.0
+  },
+  "derived": {
+    "omega_n_rad_s": 120.06585283394995,
+    "f_n_hz": 19.109073975067187,
+    "zeta": 0.0025010655948492343
+  },
+  "scaled": {
+    "k_hat": 7.370460510253906,
+    "c_hat": 0.0003070649108849466,
+    "m_hat": 0.0005112762316491038
+  },
+  "run": {
+    "iterations": 30000,
+    "runtime_seconds": 251.51687049865723,
+    "seed": 0,
+    "n_samples": 1000,
+    "t_range": [
+      0.01,
+      10.0
+    ],
+    "enforce_positive": true,
+    "holdout_every": 5
+  },
+  "fit": {
+    "rmse_m": 2.0247900635575036e-07,
+    "relative_rmse": 0.007970176678165693,
+    "max_abs_error_m": 1.3970594214459914e-06,
+    "r_squared": 0.9999364762364682,
+    "note": "computed over ALL samples, training and held out"
+  },
+  "validation": {
+    "n_train": 800,
+    "n_holdout": 200,
+    "rmse_train_m": 1.9648460080099298e-07,
+    "rmse_holdout_m": 2.2486428499510028e-07,
+    "relative_rmse_holdout": 0.008844834724278864,
+    "r_squared_holdout": 0.9999217649933184,
+    "note": "held-out points were never shown to the network"
+  }
+}

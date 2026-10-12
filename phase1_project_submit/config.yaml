@@ -1,0 +1,128 @@
+# =====================================================================
+#  Phase 1 configuration - Direction Agnostic
+#  Uncomment ONLY ONE direction block below at a time.
+# =====================================================================
+
+# -------------------------------------------------------------------
+# [X-DIRECTION BLOCK] - Commented Out
+# -------------------------------------------------------------------
+# data:
+#   csv: data/Stage1_Node3575_Data.csv
+#   meta: data/Stage1_Node3575_Meta.json
+#   modal: data/modal_results.json
+#   observation_column: "Displacement_X (m)"
+#   t_min: 0.0
+#   t_max: null
+# physics:
+#   mass: 56767.0
+#   force_amplitude: 11103.0
+#   force_frequency: 15.0
+# scaling:
+#   displacement: 1.0e-4
+#   force: 11103.0
+# network:
+#   layers: [1, 64, 64, 64, 64, 1]
+#   activation: "sin"
+#   initializer: "Glorot uniform"
+#   fourier_features:
+#     enabled: true
+#     n: 128
+#     f_min: 5.0
+#     f_max: 40.0
+# training:
+#   iterations: 30000
+#   learning_rate: 1.0e-3
+#   num_domain: 10000
+#   holdout_every: 5
+#   enforce_positive: true
+#   loss_weights: [1.0, 100.0]
+#   k_hat_init: 1.0
+#   c_hat_init: 1.0e-4
+# output:
+#   dir: outputs/phase1/X
+
+# -------------------------------------------------------------------
+# [Y-DIRECTION BLOCK] - Commented Out
+# -------------------------------------------------------------------
+# data:
+#   csv: data/Stage1_Node3575_Y_Data.csv
+#   meta: data/Stage1_Node3575_Y_Meta.json
+#   modal: data/modal_results_Y.json
+#   observation_column: "Displacement_Y (m)"
+#   t_min: 0.0
+#   t_max: null
+# physics:
+#   mass: 57485.7
+#   force_amplitude: 11103.0
+#   force_frequency: 15.0
+# scaling:
+#   displacement: 1.0e-4
+#   force: 11103.0
+# network:
+#   layers: [1, 64, 64, 64, 64, 1]
+#   activation: "sin"
+#   initializer: "Glorot uniform"
+#   fourier_features:
+#     enabled: true
+#     n: 128
+#     f_min: 5.0
+#     f_max: 40.0
+# training:
+#   iterations: 30000
+#   learning_rate: 1.0e-3
+#   num_domain: 10000
+#   holdout_every: 5
+#   enforce_positive: true
+#   loss_weights: [1.0, 100.0]
+#   k_hat_init: 1.0
+#   c_hat_init: 1.0e-4
+# output:
+#   dir: outputs/phase1/Y
+
+# -------------------------------------------------------------------
+# [Z-DIRECTION BLOCK] - Currently Active
+# -------------------------------------------------------------------
+data:
+  csv: data/Stage1_Node3575_Z_Data.csv
+  meta: data/Stage1_Node3575_Z_Meta.json
+  modal: data/modal_results_Z.json
+  observation_column: "Displacement_Z (m)"
+  t_min: 0.0
+  t_max: null
+
+physics:
+  mass: 5736762.0
+
+  # Equivalent Mode-4 / Node-3575 Z force
+  force_amplitude: -95073.0
+  force_frequency: 15.0
+
+scaling:
+  displacement: 2.0e-7
+
+  # Match the equivalent reduced-force scale
+  force: 95073.0
+
+network:
+  layers: [1, 64, 64, 64, 64, 1]
+  activation: "sin"
+  initializer: "Glorot uniform"
+  fourier_features:
+    enabled: true
+    n: 128
+    f_min: 5.0
+    f_max: 60.0
+
+training:
+  iterations: 30000
+  learning_rate: 1.0e-3
+  num_domain: 10000
+  holdout_every: 5
+  enforce_positive: true
+  loss_weights: [1.0, 100.0]
+
+  k_hat_init: 1.0
+  c_hat_init: 2.0e-7
+
+output:
+  dir: outputs/phase1/Z

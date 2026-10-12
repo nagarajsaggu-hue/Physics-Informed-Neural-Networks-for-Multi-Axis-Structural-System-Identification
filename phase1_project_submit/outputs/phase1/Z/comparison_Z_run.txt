@@ -1,0 +1,10 @@
+method                  K (N/m)      C (N.s/m)   f_n (Hz)   zeta (%)   note
+---------------------------------------------------------------------------
+PINN                 5.9923e+11     2.3534e+03    51.4378     0.0001   30000 iterations
+Least squares        1.1586e+09    -6.1371e+05     2.2618    -0.3764   R^2 = 0.000209
+ANSYS modal          5.9914e+11              -    51.4342          -   mode 4, m* = 5,736,762 kg (selected reference)
+
+PINN vs least squares : K +51619.05 %, C -100.38 %
+  -> least-squares and PINN are not directly comparable if the PINN uses a transformed/generalized force while least squares uses the raw transient force.
+PINN vs ANSYS modal   : K +0.0139 %
+  -> ANSYS reference uses the explicitly selected physical modal reference when available.

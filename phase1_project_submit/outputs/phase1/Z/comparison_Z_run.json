@@ -1,0 +1,51 @@
+{
+  "rows": [
+    {
+      "method": "PINN",
+      "K_N_per_m": 599226631384.492,
+      "C_N_s_per_m": 2353.3704348266406,
+      "f_n_hz": 51.43778614098471,
+      "zeta": 6.346456795774929e-07,
+      "note": "30000 iterations"
+    },
+    {
+      "method": "Least squares",
+      "K_N_per_m": 1158618769.0948696,
+      "C_N_s_per_m": -613706.0479703572,
+      "f_n_hz": 2.261814558061101,
+      "zeta": -0.0037638015031412103,
+      "note": "R^2 = 0.000209"
+    },
+    {
+      "method": "ANSYS modal",
+      "K_N_per_m": 599143170011.0922,
+      "C_N_s_per_m": null,
+      "f_n_hz": 51.43420361650685,
+      "zeta": null,
+      "note": "mode 4, m* = 5,736,762 kg (selected reference)"
+    }
+  ],
+  "reference_least_squares": {
+    "K": 1158618769.0948696,
+    "C": -613706.0479703572,
+    "r_squared": 0.00020863609068755284,
+    "K_stderr": 845247143.6011543,
+    "C_stderr": 8287773.49985869,
+    "mass_used": 5736762.0,
+    "omega_n_rad_s": 14.2113999987744,
+    "f_n_hz": 2.261814558061101,
+    "zeta": -0.0037638015031412103
+  },
+  "agreement": {
+    "pinn_vs_least_squares": {
+      "K_ratio": 517.1905093964746,
+      "K_percent_diff": 51619.05093964746,
+      "C_ratio": -0.0038346867243848823,
+      "C_percent_diff": -100.38346867243848
+    },
+    "pinn_vs_ansys_modal": {
+      "K_ratio": 1.0001393012181015,
+      "K_percent_diff": 0.013930121810156848
+    }
+  }
+}

@@ -1,0 +1,81 @@
+job     : pinn_X (5690)
+node    : gammaweb06
+started : Wed Sep  9 05:00:07 PM CEST 2026
+command : python scripts/run_train.py --tag X_run
+----------------------------------------------------------------
+python  : /mnt/ceph/storage/data-tmp/current/zuyi6708/DeepXDE-SysID-Phase1/venv/bin/python
+NVIDIA A100-SXM4-40GB, 40960 MiB
+NVIDIA A100-SXM4-40GB, 40960 MiB
+NVIDIA A100-SXM4-40GB, 40960 MiB
+NVIDIA A100-SXM4-40GB, 40960 MiB
+----------------------------------------------------------------
+Using backend: pytorch
+Other supported backends: tensorflow.compat.v1, tensorflow, jax, paddle.
+paddle supports more examples now and is recommended.
+Loaded 1000 samples, t = 0.01 to 10.00 s
+Mass  56,767 kg  [RESOLVED - from modal analysis]
+
+Parameters constrained positive (softplus)
+Training on 800 points, holding out 200 for validation
+Fourier features: 128 frequencies, 5.0-40.0 Hz, input dim 256
+Compiling model...
+'compile' took 74.583128 s
+
+/mnt/ceph/storage/data-tmp/current/zuyi6708/DeepXDE-SysID-Phase1/venv/lib/python3.12/site-packages/torch/autograd/graph.py:979: UserWarning: Attempting to run cuBLAS, but there was no current CUDA context! Attempting to set the primary context... (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:408.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+Training 30000 iterations, tag 'X_run' ...
+Training model...
+
+Step      Train loss              Test loss               Test metric
+0         [1.95e+02, 2.86e+01]    [1.95e+02, 2.86e+01]    []  
+1000      [1.70e+00, 2.12e-01]    [1.70e+00, 2.12e-01]    []  
+2000      [1.27e+00, 6.06e-02]    [1.27e+00, 6.06e-02]    []  
+3000      [8.50e-01, 1.31e-02]    [8.50e-01, 1.31e-02]    []  
+4000      [5.09e-01, 1.32e-03]    [5.09e-01, 1.32e-03]    []  
+5000      [2.67e-01, 1.55e-03]    [2.67e-01, 1.55e-03]    []  
+6000      [1.20e-01, 2.46e-03]    [1.20e-01, 2.46e-03]    []  
+7000      [4.36e-02, 1.79e-03]    [4.36e-02, 1.79e-03]    []  
+8000      [1.41e-02, 7.84e-04]    [1.41e-02, 7.84e-04]    []  
+9000      [8.67e-03, 8.75e-04]    [8.67e-03, 8.75e-04]    []  
+10000     [5.78e-03, 2.32e-04]    [5.78e-03, 2.32e-04]    []  
+11000     [1.36e-02, 2.87e-03]    [1.36e-02, 2.87e-03]    []  
+12000     [6.26e-03, 1.01e-03]    [6.26e-03, 1.01e-03]    []  
+13000     [6.97e-03, 6.01e-04]    [6.97e-03, 6.01e-04]    []  
+14000     [6.28e-03, 5.37e-04]    [6.28e-03, 5.37e-04]    []  
+15000     [6.51e-03, 5.54e-04]    [6.51e-03, 5.54e-04]    []  
+16000     [8.36e-03, 1.39e-03]    [8.36e-03, 1.39e-03]    []  
+17000     [5.61e-03, 2.16e-04]    [5.61e-03, 2.16e-04]    []  
+18000     [5.76e-03, 2.72e-04]    [5.76e-03, 2.72e-04]    []  
+19000     [9.22e-03, 2.02e-03]    [9.22e-03, 2.02e-03]    []  
+20000     [7.07e-03, 1.08e-03]    [7.07e-03, 1.08e-03]    []  
+21000     [7.83e-03, 1.38e-03]    [7.83e-03, 1.38e-03]    []  
+22000     [7.48e-03, 2.26e-03]    [7.48e-03, 2.26e-03]    []  
+23000     [5.27e-03, 1.55e-04]    [5.27e-03, 1.55e-04]    []  
+24000     [6.68e-03, 7.87e-04]    [6.68e-03, 7.87e-04]    []  
+25000     [6.86e-03, 1.10e-03]    [6.86e-03, 1.10e-03]    []  
+26000     [6.61e-03, 6.85e-04]    [6.61e-03, 6.85e-04]    []  
+27000     [5.73e-03, 7.04e-04]    [5.73e-03, 7.04e-04]    []  
+28000     [6.24e-03, 5.87e-04]    [6.24e-03, 5.87e-04]    []  
+29000     [5.69e-03, 4.40e-04]    [5.69e-03, 4.40e-04]    []  
+30000     [5.68e-03, 3.86e-04]    [5.68e-03, 3.86e-04]    []  
+
+Best model at step 23000:
+  train loss: 5.42e-03
+  test loss: 5.42e-03
+  test metric: []
+
+'train' took 251.516283 s
+
+Training finished in 4.2 min
+
+Identified  K = 8.183422e+08 N/m
+            C = 3.409342e+04 N.s/m
+Derived   f_n = 19.1091 Hz
+         zeta = 0.2501 %
+Fit      RMSE = 2.0248e-07 m (0.797 % of RMS, all points)
+HELD OUT RMSE = 2.2486e-07 m (0.884 %), R2 = 0.999922  [200 unseen points]
+
+Wrote /mnt/ceph/storage/data-tmp/2026/zuyi6708/DeepXDE-SysID-Phase1/outputs/phase1/X/identified_X_run.json
+----------------------------------------------------------------
+finished: Wed Sep  9 05:08:43 PM CEST 2026
+exit    : 0
